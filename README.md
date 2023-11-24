@@ -1,4 +1,4 @@
-# Sprint 3 IT Academy | Video management tool
+# Sprint 03: Testing
 
 ## Introduction
 
@@ -6,81 +6,50 @@ A company in the audiovisual sector has asked us for a web application that will
 
 You will be in charge of setting up the core of the application: all the logic of filtering and sorting of movies. You have 2 weeks to finish, which is how long this sprint lasts.
 
-<br>
+## Description
 
-## Requirements
-
-
-1. Clone this repo
-```bash
-$ git clone https://github.com/IT-Academy-BCN/starter-code-frontend-sprint-3-movies
-```
-
-2. Unlink your repo from the itacademy repository
-```bash
-$ git remote rm origin
-```
-
-3. Link your repo to the repository you have to create in your github account
-```bash
-$ git remote add origin <your repo name!>
-```
-
-<br>
-
-## Submission
-
-1. Upon completion, run the following commands:
-
-```bash
-$ git add .
-$ git commit -m "Sprint Solution"
-$ git push origin master
-```
-
-2. Create Pull Request.
-
-3. Upload the link to the virtual campus so that your mentor can correct it and give you feedback.
-
-
-
-<br>
-
-## Introduction
-
-The statement of the exercise is available on the virtual campus.
-
-<br>
-
-## Tests!
-
-
-```shell
-$ npm install
-$ npm run test:watch
-```
-
-And last, open the generated `test-results.html` file with the "Live Server" VSCode extension to see test results.
-
-Apart from the statement, you will know exactly what you are asked to do by looking at the file `tests/films.spec.js`, all tests are already defined here!
-
-<br>
+Welcome to Sprint 03: Testing! This repository focuses on validating JavaScript functions to pass the tests outlined in Sprint 3. The primary goal is to test and ensure the accuracy and reliability of common array methods like map, filter, reduce, find, and more. By rigorously testing these functions, we aim to strengthen the codebase and enhance the overall quality of the JavaScript implementation.
 
 ## Instructions
 
-You have the following indications from the frontend responsible:
+The review and main problem instructions are explained in the README_it file
 
-- It is mandatory to implement all loops in ES6 (using map, reduce, filter and sort to manipulate arrays).
+## Features
 
-- As at the moment we don't consume data from a server using an API, we will work with data from the src/data.js archive. For the moment we will implement the logic using
-an array of information about 250 movies.
+- **Array Method Testing:** Thorough testing of common array methods like map, filter, reduce, find, etc.
+- **Sprint 3 Validation:** Validate functions to ensure they meet the requirements specified in Sprint 3.
+- **JavaScript Focus:** Entirely written in JavaScript, emphasizing the language's features and capabilities.
+- **Comprehensive Test Suite:** A comprehensive test suite covering various scenarios and edge cases.
+- **Code Quality:** Emphasizes clean, modular, and well-documented code following best practices.
+- **Version Control with Git:** Utilize Git for version control to track changes and collaborate effectively.
+- **GitHub Repository Hosting:** Host the project repository on GitHub for easy access and collaboration.
 
-- The implementation is about processing this array of movies, to display it as requested in each exercise.
+## Technologies Used
 
-- The logic to implement will be placed in the src/films.js file.
+The Sprint 03: Testing and Validations project leverages the following technologies:
 
-- You don't need to show the result of each function on the screen. Your goal is to pass the tests.  More information on how to program oriented to pass tests at the end of the document.
+- **JavaScript:** The core language used for implementing and testing array methods.
+- **Jest:** A JavaScript testing framework for running unit tests on the functions.
+- **Node.js:** The runtime environment to execute JavaScript code outside the browser.
+- **Git:** Version control system for tracking changes and collaborating on the project.
+- **GitHub:** Hosts the project repository, enabling seamless collaboration and feedback.
 
-- Don't forget to include the capture of the test results in the virtual campus.
+## Badges/Shields
 
+Dev Skills
 
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+Build with
+
+![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+
+## About Me
+
+I'm a junior frontend developer passionate about creating engaging and functional web applications. This project showcases my skills in HTML, CSS, and JavaScript.
+
+## Contact
+
+If you have any questions or suggestions, do not hesitate to contact me through my email: [codenaud@gmail.com](mailto:codenaud@gmail.com)
+
+Happy coding! 🚀
