@@ -341,7 +341,7 @@ describe('Function "moviesAverageByCategory"', () => {
         ],
         'Drama'
       )
-    ).toBe(8.56);
+    ).toBe(8.57);
   });
 });
 

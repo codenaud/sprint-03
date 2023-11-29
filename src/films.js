@@ -15,27 +15,17 @@ function getMoviesFromDirector(movies, director) {
 }
 
 // Exercise 3: Calculate the average of the films of a given director.
-function moviesAverageOfDirector(director) {
-  let directorExists = movies.some((movie) => movie.director === director);
-  if (!directorExists) {
-    return 0;
-  }
-
+function moviesAverageOfDirector(movies, director) {
   let moviesFromDirector = movies.filter(
     (movie) => movie.director === director
   );
-  if (moviesFromDirector.length === 0) {
-    // Return 0 if there are no movies from the director
-    return 0;
+  let totalScore = 0;
+  for (let i = 0; i < moviesFromDirector.length; i++) {
+    totalScore += moviesFromDirector[i].score;
   }
 
-  let totalScore = moviesFromDirector.reduce(
-    (accTotal, movie) => accTotal + movie.score,
-    0
-  );
-  let averageScore = totalScore / moviesFromDirector.length;
-  let result = parseFloat(averageScore.toFixed(2));
-  console.log('EXERCICE 3 ->', result);
+  let result = Number(totalScore / moviesFromDirector.length.toFixed(2));
+  console.log('EXERCISE 3 ->', result);
   return result;
 }
 
@@ -82,27 +72,22 @@ function orderByYear(movies) {
 }
 
 // Exercise 6: Calculate the average of the movies in a category
-function moviesAverageByCategory(genre) {
-  let filteredMoviesByCategory = movies.filter((movie) =>
-    movie.genre.includes(genre)
-  );
+function moviesAverageByCategory(movies, genre) {
+  let moviesByCategory = movies.filter((movie) => movie.genre.includes(genre));
 
-  if (filteredMoviesByCategory.length === 0) {
-    // Return NaN if there are no movies from the director
-    return 0;
+  let totalScore = 0;
+  for (let i = 0; i < moviesByCategory.length; i++) {
+    totalScore += moviesByCategory[i].score;
   }
-  let totalScore = filteredMoviesByCategory.reduce(
-    (accTotal, movie) => accTotal + movie.score,
-    0
-  );
-  let averageScore = totalScore / filteredMoviesByCategory.length;
-  let result = averageScore.toFixed(2);
-  console.log('EXERCICE 6 ->', result);
+
+  let averageScore = totalScore / moviesByCategory.length;
+  let result = Math.round(averageScore * 100) / 100; // Redondear a dos decimales
+  console.log('EXERCISE 6 ->', result);
   return result;
 }
 
 // Exercise 7: Modify the duration of movies to minutes
-function hoursToMinutes() {
+function hoursToMinutes(movies) {
   // Utilize map to create a new array without modifying the original
   let result = movies.map((movie) => {
     // Create a copy of the movie object to avoid modifying the original
